@@ -6,8 +6,7 @@ for (const num of args) {
   }
   if (num >= 1) {
     setTimeout(() =>{
-      process.stdout.write('\x07');
-      process.stdout.write(`timer at ${num} seconds \n`);
+      process.stdout.write(`timer at ${num} seconds \x07 \n`);
     }, num * 1000);
   }
 }
